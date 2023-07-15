@@ -20,6 +20,9 @@
                     <a class="nav-link" routerLink="/messages" routerLinkActive="active">Messages</a>
                 </li>
             </ul>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/errors" routerLinkActive="active">Errors</a>
+            </li>
 
             <div class="dropdown" *ngIf="(accountService.currentUsers$ | async) as user" dropdown>
                 <a class="dropdown-toggle text-light text-decoration-none" dropdownToggle>Welcome {{user.username |
